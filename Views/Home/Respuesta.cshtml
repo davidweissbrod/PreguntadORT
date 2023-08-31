@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout.cshtml";
+}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<div class="titulo">
+    @{
+        if(Juego.VerificarRespuesta(idPregunta, idRespuesta)){
+            <h1>@ViewBag.rtaCorrecta</h1>
+        }else{
+            <h1>@ViewBag.rtaIncorrecta</h1>
+        }
+    }
+</div>
+<br>
+<br>
+<div class="imagen-panda">
+     @{
+        if(Juego.VerificarRespuesta(idPregunta, idRespuesta)){
+            <img src="https://img.freepik.com/vector-premium/panda-lindo-cartel-correcto-o-signo-lista-verificacion-ilustracion-vector-mascota-dibujos-animados-animales_357749-1525.jpg?w=2000" alt="Panda Correcto">
+        }else{
+            <img src="https://img.freepik.com/vector-premium/panda-lindo-signo-incorrecto-o-signo-cruz-ilustracion-vector-mascota-dibujos-animados-animales_357749-1533.jpg?w=2000" alt="Panda incorrecto">
+            <a href="Url.Action('Juego', 'Home')"><button type = "button" class = "btn btn-secondary">Volver a intentarlo</button></a>   
+        }
+    }
+</div>
+<button type="button" class="btn btn-secondary"><a href="Url.Action('Jugar', 'Home')">Continuar</a></button>

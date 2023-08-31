@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout.cshtml";
+}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<div class = "datos">
+    <p>@ViewBag.username</p>
+    <p>@ViewBag.puntajeActual</p>
+</div>
+    <div class = "preg-enun">
+        <p>@ViewBag.proxPregunta</p>
+    <div>
+<div class = "formu">
+    <form action="Url.Action('VerificarRespuesta', 'Home')" type = "post">
+        <input type="radio" id="1">
+        <a href="Url.Action('VerificarRespuesta', 'Home')"><button type="button" class="btn btn-secondary" value = "@ViewBag.proxRespuesta[0].IdRespuesta">@ViewBag.proxRespuesta[0]</button></a>
+        <input type="radio" id = "2">
+        <a href="Url.Action('VerificarRespuesta', 'Home')"><button type="button" class="btn btn-secondary" value = "@ViewBag.proxRespuesta[1].IdRespuesta">@ViewBag.proxRespuesta[1]</button></a>
+        <input type="radio" id = "3">
+        <a href="Url.Action('VerificarRespuesta', 'Home')"><button type="button" class="btn btn-secondary" value = "@ViewBag.proxRespuesta[2].IdRespuesta">@ViewBag.proxRespuesta[2]</button></a>
+        <input type="radio" id = "4">
+        <a href="Url.Action('VerificarRespuesta', 'Home')"><button type="button" class="btn btn-secondary" value = "@ViewBag.proxRespuesta[3].IdRespuesta">@ViewBag.proxRespuesta[3]</button></a>
+    </form>
+</div>
+

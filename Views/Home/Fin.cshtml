@@ -1,0 +1,14 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout.cshtml";
+}
+
+<div class="datos-final">
+    <h3>@ViewBag.username</h3>
+    <h3>@ViewBag.puntajeFinal</h3>
+</div>
+<img src="https://thumbs.gfycat.com/IdealIdioticBichonfrise-max-1mb.gif" alt="gif-gracioso">
+<div class="volver">
+    <a href="Url.Action('ConfigurarJuego', 'Home')"><button type="button" class="btn btn-secondary">Volver a jugar</button></a> 
+</div>

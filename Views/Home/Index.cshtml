@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout.cshtml";
+}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+<div class="inicio">
+    <h1>@ViewBag.mensajeInicio</h1>
+    <img src="https://static.vecteezy.com/system/resources/previews/019/869/286/non_2x/ort-letter-logo-design-on-white-background-ort-creative-circle-letter-logo-concept-ort-letter-design-vector.jpg" alt="Logo">
+    <button type="button" class="btn btn-secondary"><a href= 'Url.Action("ConfigurarJuego", "Home")'>Comenzar</button>
+</div>

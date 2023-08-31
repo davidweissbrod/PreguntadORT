@@ -1,0 +1,85 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+body{
+  background-color: #CFE7F4;
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.datos{
+  float: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+}
+
+.preg-enun{
+  background-color: lightskyblue;
+  border-radius: 20px;
+}
+
+.titulo h1{
+  font-size: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #CAA8DE;
+  font-weight: 100;
+}
+
+.imagen-panda img{
+  width: 80px;
+  height: 60px;
+}
+
+.datos-final{
+  text-align: center;
+}
+
+.volver{
+  text-align: center;
+}
+
+.datos{
+  display: flex;
+  float: left;
+  flex-direction: column;
+}
+
+.imagen-panda{
+  text-align: center;
+}
+
+.preg-enun{
+  text-align: center;
+}
+
+.inicio img{
+  width: 80px;
+  height: 60px;
+}
+
+.inicio{
+  display: flex;
+  justify-content: center;
+}
